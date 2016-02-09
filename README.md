@@ -1,3 +1,8 @@
+# Dead fork of oidc-token-manager
+
+I suggested a fix/enhancement IdentityModel/oidc-token-manager#12 and tested some thoughts out.
+I made my changes on master (because I didn't know what I was doing...) so I'm leaving this.
+
 # oidc-token-manager
 
 Library to manage tokens obtained via OpenID Connect (OIDC)
