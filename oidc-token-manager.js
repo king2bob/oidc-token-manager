@@ -473,9 +473,8 @@ TokenManager.prototype.renewTokenSilentAsync = function () {
 
     var settings = copy(mgr._settings);
     settings.redirect_uri = settings.silent_redirect_uri;
-    if (!settings.silent_redirect_allow_login_prompt) {
-        settings.prompt = "none";
-    }
+    settings.prompt = "none";
+
     var oidc = new OidcClient(settings);
     return oidc.createTokenRequestAsync().then(function (request) {
         var frame = new FrameLoader(request.url);
